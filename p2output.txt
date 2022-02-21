@@ -1,1 +1,72 @@
-
+Breakpoint 1, main () at p2original.c:34
+34    a=input();
+(gdb) s
+input () at p2original.c:3
+3    {
+(gdb) n
+5      printf("Enter value:");
+(gdb) n
+6      scanf("%d",&x);
+(gdb) n
+Enter value:1
+7      return x;
+(gdb) n
+8    }
+(gdb) n
+main () at p2original.c:35
+35    b=input();
+(gdb) s
+input () at p2original.c:3
+3    {
+(gdb) n
+5      printf("Enter value:");
+(gdb) n
+6      scanf("%d",&x);
+(gdb) n
+Enter value:2
+7      return x;
+(gdb) n
+8    }
+(gdb) n
+main () at p2original.c:36
+36    c=input();
+(gdb) s
+input () at p2original.c:3
+3    {
+(gdb) n
+5      printf("Enter value:");
+(gdb) n
+6      scanf("%d",&x);
+(gdb) n
+Enter value:3
+7      return x;
+(gdb) n
+8    }
+(gdb) n
+main () at p2original.c:37
+37    x=check_scalene(a,b,c);
+(gdb) s
+check_scalene (a=1, b=2, c=3) at p2original.c:12
+12      if(a==b || b==c || c==a)
+(gdb) n
+18      return 1;
+(gdb) n
+22   }
+(gdb) n
+main () at p2original.c:38
+38    output(a,b,c,x);
+(gdb) s
+output (a=1 '\001', b=2 '\002', c=3 '\003', isscalene=1) at p2original.c:25
+25     if(isscalene==1)
+(gdb) n
+26     printf("The triangle is scalene \n");
+(gdb) n
+The triangle is scalene 
+30   }
+(gdb) n
+main () at p2original.c:39
+39    return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 87) exited normally]
+(gdb) 
