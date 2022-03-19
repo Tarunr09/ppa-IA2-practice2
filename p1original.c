@@ -24,5 +24,4 @@ float main()
   find_area(base,height,&area);
   output(area);
   return 0;
-
 }

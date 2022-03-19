@@ -1,11 +1,12 @@
 #include<stdio.h>
- int input()
+int input()
  {
    int x;
    printf("Enter value:");
    scanf("%d",&x);
    return x;
  }
+
  int check_scalene(int a, int b, int c)
  {
    int isscalene;
@@ -18,16 +19,16 @@
     return 1;
     }
    return isscalene;
-
  }
+
  void output(char a, char b, char c, int isscalene)
  {
    if(isscalene==1)
    printf("The triangle is scalene \n");
    else if(isscalene==-1)
    printf("The triangle is not scalene \n");
-
  }
+
  int main()
  {
   int a,b,c,x;

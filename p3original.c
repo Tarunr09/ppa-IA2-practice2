@@ -6,6 +6,7 @@ int input()
   scanf("%d",&n);
   return n;
 }
+
 int composite(int n)
 {
   int a=0;
@@ -18,6 +19,7 @@ int composite(int n)
   }
  return a;
 }
+
 void output(int a)
 {
    if(a==1)
