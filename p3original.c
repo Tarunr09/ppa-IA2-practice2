@@ -5,7 +5,7 @@ int input()
   printf("Enter value:");
   scanf("%d",&n);
   return n;
-}
+  }
 
 int composite(int n)
 {
