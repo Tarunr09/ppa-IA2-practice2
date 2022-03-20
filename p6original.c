@@ -31,4 +31,4 @@ int main()
   str_reverse(a,reverse);
   output(a,reverse);
   return 0;
-}
+ }
