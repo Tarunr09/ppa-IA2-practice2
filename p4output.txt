@@ -1,1 +1,148 @@
-
+Breakpoint 1, main () at p4original.c:52
+52  {
+(gdb) n
+54    n=input();
+(gdb) s
+input () at p4original.c:4
+4   {
+(gdb) n
+6     printf("Enter value:");
+(gdb) n
+7     scanf("%d",&n);
+(gdb) n
+Enter value:5
+8     return n;
+(gdb) n
+9   }
+(gdb) n
+main () at p4original.c:55
+55    int a[n];
+(gdb) n
+56    input_array(n,a);
+(gdb) s
+input_array (n=5, a=0x7fff13c83900) at p4original.c:14
+14    printf("Enter the elements of the array:\n");
+(gdb) n
+Enter the elements of the array:
+15    for(i=1;i<=n;i++){
+(gdb) n
+16      scanf("%d",&a[i]);
+(gdb) n
+1
+15    for(i=1;i<=n;i++){
+(gdb) n
+16      scanf("%d",&a[i]);
+(gdb) n
+2
+15    for(i=1;i<=n;i++){
+(gdb) n
+16      scanf("%d",&a[i]);
+(gdb) n
+7
+15    for(i=1;i<=n;i++){
+(gdb) n
+16      scanf("%d",&a[i]);
+(gdb) n
+8
+15    for(i=1;i<=n;i++){
+(gdb) n
+16      scanf("%d",&a[i]);
+(gdb) n
+12
+15    for(i=1;i<=n;i++){
+(gdb) n
+18  }
+(gdb) n
+main () at p4original.c:58
+58    x=sum_composite_numbers(n,a);
+(gdb) s
+sum_composite_numbers (n=5, a=0x7fff13c83900) at p4original.c:35
+35    int sum=0;
+(gdb) n
+36    for(int i=1;i<=n;i++)
+(gdb) n
+38      if(composite (a[i])==1)
+(gdb) n
+36    for(int i=1;i<=n;i++)
+(gdb) n
+38      if(composite (a[i])==1)
+(gdb) n
+36    for(int i=1;i<=n;i++)
+(gdb) n
+38      if(composite (a[i])==1)
+(gdb) n
+36    for(int i=1;i<=n;i++)
+(gdb) n
+38      if(composite (a[i])==1)
+(gdb) n
+40       sum=sum+a[i];
+(gdb) n
+36    for(int i=1;i<=n;i++)
+(gdb) n
+38      if(composite (a[i])==1)
+(gdb) n
+40       sum=sum+a[i];
+(gdb) n
+36    for(int i=1;i<=n;i++)
+(gdb) n
+43    return sum;
+(gdb) n
+44  }
+(gdb) n
+main () at p4original.c:59
+59    output(x);
+(gdb) s
+output (sum=20) at p4original.c:48
+48    printf("The sum is %d",sum);
+(gdb) n
+49  }
+(gdb) n
+main () at p4original.c:60
+60    return 0;
+(gdb) p n
+$1 = 5
+(gdb) p *n
+Cannot access memory at address 0x5
+(gdb) p x
+$2 = 20
+(gdb) p a[n]
+$3 = 12
+(gdb) p *a
+$4 = 0
+(gdb) a[0]
+Ambiguous command "a[0]": .
+(gdb) p a[0]
+$5 = 0
+(gdb) 
+$6 = 0
+(gdb) p a[1]
+$7 = 1
+(gdb) p a[*]
+A syntax error in expression, near `]'.
+(gdb) p a*
+A syntax error in expression, near `'.
+(gdb) p *a
+$8 = 0
+(gdb) p *a@22
+$9 = {0, 1, 2, 7, 8, 12, -1321203420, 22068, 5, 20, 4, 0, 331888896, 32767, 
+  2003525376, -1731949581, 651979584, 32568, 0, 0, -1321204128, 22068}
+(gdb) 
+$10 = {0, 1, 2, 7, 8, 12, -1321203420, 22068, 5, 20, 4, 0, 331888896, 32767, 
+  2003525376, -1731949581, 651979584, 32568, 0, 0, -1321204128, 22068}
+(gdb) 
+$11 = {0, 1, 2, 7, 8, 12, -1321203420, 22068, 5, 20, 4, 0, 331888896, 32767, 
+  2003525376, -1731949581, 651979584, 32568, 0, 0, -1321204128, 22068}
+(gdb) p *a@3
+$12 = {0, 1, 2}
+(gdb) l
+55    int a[n];
+56    input_array(n,a);
+57    int x;
+58    x=sum_composite_numbers(n,a);
+59    output(x);
+60    return 0;
+61    }(gdb) 
+Line number 62 out of range; p4original.c has 61 lines.
+(gdb) c
+Continuing.
+The sum is 20[Inferior 1 (process 308) exited normally]

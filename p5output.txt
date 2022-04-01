@@ -1,1 +1,85 @@
-
+Breakpoint 1, main () at p5original.c:28
+28    x=input();
+(gdb) n
+Enter a number :
+12
+29    y=input();
+(gdb) n
+Enter a number :
+16
+30    g=gcd(x,y);
+(gdb) s
+gcd (a=12, b=16) at p5original.c:13
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+16        gcd=i;
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+16        gcd=i;
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) s
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+16        gcd=i;
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+15        if(a%i==0 && b%i==0)
+(gdb) n
+13    for (int i=1;i<=a && i<=b; i++)
+(gdb) n
+18      return gcd;
+(gdb) n
+19  }
+(gdb) n
+main () at p5original.c:31
+31    output(x,y,g);
+(gdb) s
+output (a=12, b=16, gcd=4) at p5original.c:22
+22    printf("GCD for given two numbers is %d and %d is %d",a,b,gcd);
+(gdb) n
+23  }
+(gdb) n
+main () at p5original.c:32
+32    return 0;
+(gdb) c
+Continuing.
+GCD for given two numbers is 12 and 16 is 4[Inferior 1 (process 297) exited normally]

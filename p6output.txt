@@ -1,1 +1,68 @@
-
+Breakpoint 1, main () at p6original.c:28
+28  {
+(gdb) n
+30    input(a);
+(gdb) s
+input (a=0x7ffc405b6e60 "\a'\336˦\177") at p6original.c:6
+6     printf("Enter the string:");
+(gdb) n
+7     scanf("%s",a);
+(gdb) n
+Enter the string:hello
+8   }
+(gdb) n
+main () at p6original.c:31
+31    str_reverse(a,reverse);
+(gdb) s
+str_reverse (a=0x7ffc405b6e60 "hello", b=0x7ffc405b6ed0 "") at p6original.c:13
+13    n=strlen(a);
+(gdb) n
+14    j=n-1;
+(gdb) n
+15    for(int i=0;i<n;i++)
+(gdb) n
+17      b[j]=a[i];
+(gdb) n
+18        j--;
+(gdb) n
+15    for(int i=0;i<n;i++)
+(gdb) n
+17      b[j]=a[i];
+(gdb) n
+18        j--;
+(gdb) n
+15    for(int i=0;i<n;i++)
+(gdb) n
+17      b[j]=a[i];
+(gdb) n
+18        j--;
+(gdb) n
+15    for(int i=0;i<n;i++)
+(gdb) n
+17      b[j]=a[i];
+(gdb) n
+18        j--;
+(gdb) n
+15    for(int i=0;i<n;i++)
+(gdb) n
+17      b[j]=a[i];
+(gdb) n
+18        j--;
+(gdb) n
+15    for(int i=0;i<n;i++)
+(gdb) n
+20  }
+(gdb) n
+main () at p6original.c:32
+32    output(a,reverse);
+(gdb) s
+output (a=0x7ffc405b6e60 "hello", reverse=0x7ffc405b6ed0 "olleh")
+    at p6original.c:24
+24    printf("The reverse of the string %s is %s",a,reverse);
+(gdb) n
+25  }
+(gdb) n
+main () at p6original.c:33
+33    return 0;
+(gdb) n
+34   }(gdb)
